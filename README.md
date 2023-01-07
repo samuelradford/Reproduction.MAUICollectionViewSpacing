@@ -58,9 +58,9 @@ In my example I have set the CollectionView background to Red and the Label's to
 
 You can see in this example that the Labels have space between then, even though in the documentation it says:
 
-<kbd>
+
 ![image](https://user-images.githubusercontent.com/19474685/211172691-5d3beaa3-e579-458c-88c9-e52854634ecc.png)
-</kbd>
+
 Source - https://learn.microsoft.com/en-us/dotnet/maui/user-interface/controls/collectionview/layout?view=net-maui-7.0
 
 Example of application running
