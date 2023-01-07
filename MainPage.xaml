@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:viewmodels="clr-namespace:Reproduction.MAUICollectionViewSpacing.ViewModels"
-             x:DataType="viewmodels:MainPageViewModel"
+             xmlns:local="clr-namespace:Reproduction.MAUICollectionViewSpacing"
+             x:DataType="local:MainPage"
              x:Class="Reproduction.MAUICollectionViewSpacing.MainPage">
 
     <Grid RowDefinitions="*"
@@ -12,7 +12,7 @@
                         ItemsSource="{Binding Strings}"
                         BackgroundColor="Red">
             <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="viewmodels:MainPageViewModel">
+                <DataTemplate x:DataType="local:MainPage">
                     <Label Text="{Binding .}"
                            TextColor="Black"
                            FontSize="14"

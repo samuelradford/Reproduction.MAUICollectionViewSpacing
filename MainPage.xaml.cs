@@ -1,13 +1,22 @@
-﻿using Reproduction.MAUICollectionViewSpacing.ViewModels;
-
-namespace Reproduction.MAUICollectionViewSpacing;
+﻿namespace Reproduction.MAUICollectionViewSpacing;
 
 public partial class MainPage : ContentPage
 {
-	public MainPage(MainPageViewModel vm)
+    public List<string> Strings { get; set; }
+
+    public MainPage()
 	{
 		InitializeComponent();
-		BindingContext = vm;
+        Strings = new();
+        AddStrings();
+		BindingContext = this;
 	}
-}
 
+    void AddStrings()
+    {
+        for (var i = 0; i < 10; i++)
+        {
+            Strings.Add("CollectionView shouldn't have spacing between items");
+        }
+    }
+}

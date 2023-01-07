@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.Logging;
-using Reproduction.MAUICollectionViewSpacing.ViewModels;
 
 namespace Reproduction.MAUICollectionViewSpacing;
 
@@ -20,7 +19,6 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 
-		builder.Services.AddSingleton<MainPageViewModel>();
 		builder.Services.AddSingleton<MainPage>();
 
 		return builder.Build();
